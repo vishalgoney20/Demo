@@ -9,13 +9,13 @@ abstract class Laptop
 	  abstract void display();	
 }
 
-class Trackpad extends Laptop {
+class Dell extends Laptop {
    
       private String name;
 	  
       void monitor()
 	  {
-	     System.out.println("displays content on Trackpad screen i.e, runtime polymorphism and inheritance successfull ....\n");
+	     System.out.println("displays content on screen i.e, runtime polymorphism and inheritance successfull ....\n");
 	  }
 	  
 	  void display()
@@ -25,12 +25,12 @@ class Trackpad extends Laptop {
 	  
 	  void addNewScreen(int quantity,String name)
 	  {
-	      System.out.println(quantity+" screens  with name "+name +"  are added to trackpad ....compile time polymorphism succesfull\n");
+	      System.out.println(quantity+" screens  with name "+name +"  are added to Dell laptop ....compile time polymorphism succesfull\n");
 	  }
 	  
 	  void addNewScreen(String model,String name,int quantity)
 	  {
-	      System.out.println(quantity+" screens  with name "+name +" and model "+model+ "  are added to trackpad ....compile time polymorphism succesfull\n");
+	      System.out.println(quantity+" screens  with name "+name +" and model "+model+ "  are added to Dell laptop ....compile time polymorphism succesfull\n");
 	  }  
 	  
 	  public void setName(String newName) 
@@ -41,7 +41,7 @@ class Trackpad extends Laptop {
       public String getName()
 	  {
 			return name;
-      }
+          }
 	  
 }
 
@@ -49,7 +49,7 @@ class Driver
 {
    public static void main(String[] args)
   {
-      Trackpad obj=new Trackpad();
+      Dell obj=new Dell();
 	  obj.monitor();
       obj.display();
 	  obj.addNewScreen("LG","vishal",2);

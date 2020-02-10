@@ -1,8 +1,8 @@
-class One {
+class University {
 
 public void display() {
 
-System.out.println("One");
+System.out.println("This is university...");
 
 }
 
@@ -10,13 +10,13 @@ System.out.println("One");
 
 //inheritance
 
-class Two extends One {
+class Osmania extends University {
 
 @Override
 
 public void display() {
 
-System.out.println("Two");
+System.out.println("This is osmania univeristy");
 
 }
 
@@ -78,11 +78,11 @@ class MainClass {
 
 public static void main(String[] args) {
 
-One a=new One();
+University a=new University();
 
 a.display();
 
-Two b=new Two();
+Osmania b=new Osmania();
 
 b.display();
 
